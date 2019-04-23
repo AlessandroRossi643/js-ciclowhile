@@ -6,13 +6,13 @@ var cognomeutente=prompt("Inserisci il tuo cognome!");
 lista_cognomi.push(cognomeutente);
 
 // Stampa lista ordinata alfabeticamente
-document.writeln(lista_cognomi.sort());
+document.getElementById("lista").innerHTML=lista_cognomi.sort();
 
 // Stampa posizione cognome utente
 var i=0;
 while (i<lista_cognomi.length) {
   if (lista_cognomi[i]==cognomeutente) {
-    console.log(i);
+    document.getElementById("posizione").innerHTML=i;
   }
   i++;
 }
